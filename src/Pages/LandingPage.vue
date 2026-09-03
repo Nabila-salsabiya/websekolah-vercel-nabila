@@ -26,7 +26,7 @@
         <div class="fitur-card card-1">
           <span class="fitur-icon">🚚</span>
           <h3>Gratis Ongkir</h3>
-          <p>Pengiriman gratis ke seluruh Indonesia tanpa minimum belanja</p>
+          <p>Pengiriman gratissss ke seluruh Indonesia tanpa minimum belanja</p>
         </div>
 
         <!-- Kartu 2: Warna pink muda -->
