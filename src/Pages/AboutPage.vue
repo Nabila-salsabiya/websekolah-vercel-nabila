@@ -63,7 +63,7 @@ const daftarTim = ref([
 <style scoped>
 .banner {
   background-color: beige;   /* Sesuaikan dengan warna Landing Page */
-  color: white;
+  color: rgb(211, 48, 48);
   text-align: center;
   padding: 3rem 1rem;
 }

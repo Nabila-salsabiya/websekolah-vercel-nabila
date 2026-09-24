@@ -70,7 +70,7 @@
 /* Banner — samakan warna dengan Landing Page & About Page */
 .banner {
   background-color: bisque;   /* Ganti sesuai tema warna kalian */
-  color: white;
+  color: rgb(237, 12, 12);
   text-align: center;
   padding: 3rem 1rem;
 }
