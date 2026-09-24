@@ -1,164 +1,138 @@
-
+vue
 <template>
   <div class="landing-page">
+
     <!-- ========== HERO ========== -->
-    <section class="hero bg-indigo-500 p-[100px] flex-col items-center text-center
-    text-white gap-[18px]">
-      <h1 class="text-[62pt] text-center">Selamat Datang di Toko Kami</h1>
-      <p class="hero-subtitle">
+    <section
+      class="bg-gradient-to-br from-pink-400 to-pink-600 text-white text-center
+             px-6 py-20 md:px-10 lg:py-24 flex flex-col items-center gap-5"
+    >
+      <h1
+        class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+      >
+        Selamat Datang di Toko Kami
+      </h1>
+
+      <p
+        class="text-lg md:text-xl max-w-2xl opacity-90 leading-relaxed"
+      >
         Temukan produk terbaik dengan kualitas premium dan harga bersahabat
       </p>
-      <center>
-        <video controls width="480" loop>
- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+
+      <!-- Video -->
+      <div class="w-full flex justify-center my-4">
+        <video
+          controls
+          loop
+          class="w-full max-w-[480px] rounded-xl shadow-lg"
+        >
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
         </video>
-      </center>
-      <router-link to="/product" class="btn-hero">    Lihat Produk 🛒
+      </div>
+
+      <!-- Tombol -->
+      <router-link
+        to="/product"
+        class="inline-block bg-white text-pink-600
+               px-8 py-3 rounded-full font-bold text-base
+               shadow-md transition duration-300
+               hover:-translate-y-1 hover:shadow-xl
+               focus:outline-none focus:ring-4 focus:ring-white/40"
+      >
+        Lihat Produk 🛒
       </router-link>
     </section>
 
     <!-- ========== FITUR ========== -->
-    <section class="fitur">
-      <h2>Kenapa Pilih Kami?</h2>
+    <section class="py-16 px-6 text-center bg-gray-50">
 
-      <div class="fitur-container">
-        <!-- Kartu 1: Warna ungu muda -->
-        <div class="fitur-card card-1">
-          <span class="fitur-icon">🚚</span>
-          <h3>Gratis Ongkir</h3>
-          <p>Pengiriman gratis ke seluruh Indonesia tanpa minimum belanja</p>
+      <h2
+        class="mb-10 text-3xl md:text-4xl font-bold text-gray-800"
+      >
+        Kenapa Pilih Kami?
+      </h2>
+
+      <div
+        class="flex flex-wrap justify-center gap-8
+               max-w-6xl mx-auto"
+      >
+
+        <!-- Kartu 1 -->
+        <div
+          class="flex-1 min-w-[250px] max-w-sm
+                 p-8 rounded-xl
+                 bg-purple-100 border-l-4 border-purple-500
+                 shadow-md
+                 transition duration-300
+                 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <span class="block text-5xl mb-4">
+            🚚
+          </span>
+
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Gratis Ongkir
+          </h3>
+
+          <p class="text-gray-600 text-base leading-relaxed">
+            Pengiriman gratis ke seluruh Indonesia tanpa minimum belanja
+          </p>
         </div>
 
-        <!-- Kartu 2: Warna pink muda -->
-        <div class="fitur-card card-2">
-          <span class="fitur-icon">⭐</span>
-          <h3>Kualitas Terjamin</h3>
-          <p>Semua produk melewati quality control ketat sebelum dikirim</p>
+        <!-- Kartu 2 -->
+        <div
+          class="flex-1 min-w-[250px] max-w-sm
+                 p-8 rounded-xl
+                 bg-pink-100 border-l-4 border-pink-500
+                 shadow-md
+                 transition duration-300
+                 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <span class="block text-5xl mb-4">
+            ⭐
+          </span>
+
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Kualitas Terjamin
+          </h3>
+
+          <p class="text-gray-600 text-base leading-relaxed">
+            Semua produk melewati quality control ketat sebelum dikirim
+          </p>
         </div>
 
-        <!-- Kartu 3: Warna biru muda -->
-        <div class="fitur-card card-3">
-          <span class="fitur-icon">💬</span>
-          <h3>Support 24/7</h3>
-          <p>Tim kami siap membantu kapan saja melalui chat dan telepon</p>
+        <!-- Kartu 3 -->
+        <div
+          class="flex-1 min-w-[250px] max-w-sm
+                 p-8 rounded-xl
+                 bg-sky-100 border-l-4 border-sky-500
+                 shadow-md
+                 transition duration-300
+                 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <span class="block text-5xl mb-4">
+            💬
+          </span>
+
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Support 24/7
+          </h3>
+
+          <p class="text-gray-600 text-base leading-relaxed">
+            Tim kami siap membantu kapan saja melalui chat dan telepon
+          </p>
         </div>
+
       </div>
     </section>
+
   </div>
 </template>
 
 <script setup>
+// Tidak ada script yang diperlukan
 </script>
-
-<style scoped>
-.hero {
-  background: linear-gradient(135deg, #db7dbf, #d371a1);
-  color: white;
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
-.btn-hero {
-  display: inline-block;
-  background: white;
-  color: #0f9b8e;
-  text-decoration: none;
-  padding: 0.85rem 2.5rem;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Efek hover: tombol terangkat */
-.btn-hero:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* ===== FITUR SECTION ===== */
-.fitur {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: #f9fafb;
-}
-
-.fitur h2 {
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-  color: #333;
-}
-
-/* Container kartu sejajar */
-.fitur-container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Style dasar semua kartu */
-.fitur-card {
-  flex: 1;
-  min-width: 250px;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.fitur-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* ===== WARNA MASING-MASING KARTU ===== */
-
-/* Kartu 1: Ungu muda */
-.card-1 {
-  background-color: #ede9fe;
-  border-left: 4px solid #8b5cf6;
-}
-
-/* Kartu 2: Pink muda */
-.card-2 {
-  background-color: #fce7f3;
-  border-left: 4px solid #ec4899;
-}
-
-/* Kartu 3: Biru muda */
-.card-3 {
-  background-color: #e0f2fe;
-  border-left: 4px solid #0ea5e9;
-}
-
-.fitur-icon {
-  font-size: 2.5rem;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.fitur-card h3 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.fitur-card p {
-  color: #666;
-  font-size: 0.95rem;
-}
-</style>
-

@@ -1,4 +1,3 @@
-
 <template>
   <div class="about-page">
     <!-- Banner -->
@@ -124,4 +123,3 @@ justify-content: center;
   margin-top: 2rem;
 }
 </style>
-

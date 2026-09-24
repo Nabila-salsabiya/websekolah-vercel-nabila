@@ -9,6 +9,11 @@ const daftarProduk = [
 'https://i.pinimg.com/736x/07/71/ed/0771edee4246abc5f034c3be2e739e74.jpg' },
 { id:4, nama: 'Set make up Diorr', harga: 10000000, gambar:
 'https://i.pinimg.com/736x/51/9e/7d/519e7df49d1200d19f0e45e175afda4c.jpg' },
+{ id:5, nama: 'maskara Dior', harga: 8000000, gambar:
+    'https://i.pinimg.com/736x/0e/bb/16/0ebb1601f0eadff28ad63cbda15d4ae7.jpg' },
+    { id:6, nama: 'eyeshadow Dior', harga : 700000, gambar:
+        'https://i.pinimg.com/736x/a2/99/1e/a2991e045195b7ca458d478b11025269.jpg'
+    },
 ]
 </script>
 <template>
