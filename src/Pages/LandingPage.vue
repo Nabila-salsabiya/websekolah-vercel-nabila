@@ -1,244 +1,130 @@
+```vue
 <template>
-  <div class="contact-page">
+  <div class="landing-page">
 
-    <!-- ========== HERO / BANNER ========== -->
+    <!-- ========== HERO ========== -->
     <section
-      class="bg-gradient-to-br from-pink-400 to-pink-600
-             text-white text-center
-             px-6 py-16 md:px-10 lg:py-20"
+      class="bg-gradient-to-br from-pink-400 to-pink-600 text-white text-center
+             px-6 py-20 md:px-10 lg:py-24 flex flex-col items-center gap-5"
     >
       <h1
-        class="text-4xl md:text-5xl font-bold leading-tight"
+        class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
       >
-        Hubungi Kami
+        Selamat Datang di Toko Kami
       </h1>
 
       <p
-        class="mt-4 text-lg md:text-xl max-w-2xl
-               mx-auto opacity-90 leading-relaxed"
+        class="text-lg md:text-xl max-w-2xl opacity-90 leading-relaxed"
       >
-        Kami siap membantu menjawab pertanyaan dan kebutuhan kamu
+        Temukan produk terbaik dengan kualitas premium dan harga bersahabat
       </p>
+
+      <!-- Video -->
+      <div class="w-full flex justify-center my-4">
+        <video
+          controls
+          loop
+          class="w-full max-w-[480px] rounded-xl shadow-lg"
+        >
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
+        </video>
+      </div>
+
+      <!-- Tombol -->
+      <router-link
+        to="/product"
+        class="inline-block bg-white text-pink-600
+               px-8 py-3 rounded-full font-bold text-base
+               shadow-md transition duration-300
+               hover:-translate-y-1 hover:shadow-xl
+               focus:outline-none focus:ring-4 focus:ring-white/40"
+      >
+        Lihat Produk 🛒
+      </router-link>
     </section>
 
-    <!-- ========== KONTEN KONTAK ========== -->
-    <section class="py-16 px-6 bg-gray-50">
+    <!-- ========== FITUR ========== -->
+    <section class="py-16 px-6 text-center bg-gray-50">
+
+      <h2
+        class="mb-10 text-3xl md:text-4xl font-bold text-gray-800"
+      >
+        Kenapa Pilih Kami?
+      </h2>
 
       <div
-        class="max-w-6xl mx-auto
-               flex flex-col lg:flex-row
-               gap-8"
+        class="flex flex-wrap justify-center gap-8
+               max-w-6xl mx-auto"
       >
 
-        <!-- ========== INFO KONTAK ========== -->
+        <!-- Kartu 1 -->
         <div
-          class="flex-1
-                 bg-purple-100
-                 border-l-4 border-purple-500
-                 rounded-xl
-                 p-8
+          class="flex-1 min-w-[250px] max-w-sm
+                 p-8 rounded-xl
+                 bg-purple-100 border-l-4 border-purple-500
                  shadow-md
                  transition duration-300
-                 hover:-translate-y-1 hover:shadow-xl"
+                 hover:-translate-y-2 hover:shadow-xl"
         >
-          <h2
-            class="text-2xl md:text-3xl
-                   font-bold text-gray-800 mb-6"
-          >
-            Info Kontak
-          </h2>
+          <span class="block text-5xl mb-4">
+            🚚
+          </span>
 
-          <ul class="space-y-5">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Gratis Ongkir
+          </h3>
 
-            <li class="flex items-start gap-3">
-              <span class="text-2xl">📍</span>
-
-              <div>
-                <p class="font-semibold text-gray-800">
-                  Alamat
-                </p>
-
-                <p class="text-gray-600">
-                  Jl. Bandung Kota No. 62
-                </p>
-              </div>
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-2xl">📞</span>
-
-              <div>
-                <p class="font-semibold text-gray-800">
-                  Telepon
-                </p>
-
-                <p class="text-gray-600">
-                  (813) 892184428
-                </p>
-              </div>
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-2xl">✉️</span>
-
-              <div>
-                <p class="font-semibold text-gray-800">
-                  Email
-                </p>
-
-                <p class="text-gray-600">
-                  info@SalsabiyaDIOR.com
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
-          <!-- Jam Operasional -->
-          <div
-            class="mt-8
-                   bg-white/70
-                   rounded-lg
-                   p-4"
-          >
-            <p class="font-semibold text-gray-800">
-              🕐 Jam Operasional
-            </p>
-
-            <p class="text-gray-600 mt-1">
-              Senin – Jumat: 08.00 – 17.00
-            </p>
-          </div>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Pengiriman gratis ke seluruh Indonesia tanpa minimum belanja
+          </p>
         </div>
 
-
-        <!-- ========== FORM KONTAK ========== -->
+        <!-- Kartu 2 -->
         <div
-          class="flex-1
-                 bg-white
-                 rounded-xl
-                 p-8
+          class="flex-1 min-w-[250px] max-w-sm
+                 p-8 rounded-xl
+                 bg-pink-100 border-l-4 border-pink-500
                  shadow-md
                  transition duration-300
-                 hover:shadow-xl"
+                 hover:-translate-y-2 hover:shadow-xl"
         >
-          <h2
-            class="text-2xl md:text-3xl
-                   font-bold text-gray-800 mb-6"
-          >
-            Kirim Pesan
-          </h2>
+          <span class="block text-5xl mb-4">
+            ⭐
+          </span>
 
-          <form @submit.prevent>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Kualitas Terjamin
+          </h3>
 
-            <!-- Nama -->
-            <div class="mb-5">
-              <label
-                for="nama"
-                class="block mb-2
-                       font-semibold text-gray-700"
-              >
-                Nama
-              </label>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Semua produk melewati quality control ketat sebelum dikirim
+          </p>
+        </div>
 
-              <input
-                id="nama"
-                type="text"
-                placeholder="Masukkan nama kamu"
-                class="w-full
-                       px-4 py-3
-                       rounded-lg
-                       border border-gray-300
-                       text-gray-800
-                       transition duration-300
-                       focus:outline-none
-                       focus:border-pink-400
-                       focus:ring-2
-                       focus:ring-pink-200"
-              />
-            </div>
+        <!-- Kartu 3 -->
+        <div
+          class="flex-1 min-w-[250px] max-w-sm
+                 p-8 rounded-xl
+                 bg-sky-100 border-l-4 border-sky-500
+                 shadow-md
+                 transition duration-300
+                 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <span class="block text-5xl mb-4">
+            💬
+          </span>
 
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Support 24/7
+          </h3>
 
-            <!-- Email -->
-            <div class="mb-5">
-              <label
-                for="email"
-                class="block mb-2
-                       font-semibold text-gray-700"
-              >
-                Email
-              </label>
-
-              <input
-                id="email"
-                type="email"
-                placeholder="salsabiya@email.com"
-                class="w-full
-                       px-4 py-3
-                       rounded-lg
-                       border border-gray-300
-                       text-gray-800
-                       transition duration-300
-                       focus:outline-none
-                       focus:border-pink-400
-                       focus:ring-2
-                       focus:ring-pink-200"
-              />
-            </div>
-
-
-            <!-- Pesan -->
-            <div class="mb-5">
-              <label
-                for="pesan"
-                class="block mb-2
-                       font-semibold text-gray-700"
-              >
-                Pesan
-              </label>
-
-              <textarea
-                id="pesan"
-                rows="5"
-                placeholder="Tulis pesan kamu di sini..."
-                class="w-full
-                       px-4 py-3
-                       rounded-lg
-                       border border-gray-300
-                       text-gray-800
-                       resize-none
-                       transition duration-300
-                       focus:outline-none
-                       focus:border-pink-400
-                       focus:ring-2
-                       focus:ring-pink-200"
-              ></textarea>
-            </div>
-
-
-            <!-- Tombol -->
-            <button
-              type="submit"
-              class="w-full
-                     bg-pink-500
-                     hover:bg-pink-600
-                     text-white
-                     px-8 py-3
-                     rounded-full
-                     font-bold
-                     text-base
-                     shadow-md
-                     transition duration-300
-                     hover:-translate-y-1
-                     hover:shadow-xl
-                     focus:outline-none
-                     focus:ring-4
-                     focus:ring-pink-200"
-            >
-              Kirim 🚀
-            </button>
-
-          </form>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Tim kami siap membantu kapan saja melalui chat dan telepon
+          </p>
         </div>
 
       </div>
@@ -248,6 +134,6 @@
 </template>
 
 <script setup>
-// Tidak ada logic yang diperlukan.
-// Form masih hanya digunakan sebagai tampilan.
+// Tidak ada script yang diperlukan
 </script>
+```

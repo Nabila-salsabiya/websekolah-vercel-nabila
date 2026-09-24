@@ -1,195 +1,253 @@
 <template>
   <div class="contact-page">
-    <!-- Banner -->
-    <section class="banner">
-      <h1>Hubungi Kami</h1>
+
+    <!-- ========== HERO / BANNER ========== -->
+    <section
+      class="bg-gradient-to-br from-pink-400 to-pink-600
+             text-white text-center
+             px-6 py-16 md:px-10 lg:py-20"
+    >
+      <h1
+        class="text-4xl md:text-5xl font-bold leading-tight"
+      >
+        Hubungi Kami
+      </h1>
+
+      <p
+        class="mt-4 text-lg md:text-xl max-w-2xl
+               mx-auto opacity-90 leading-relaxed"
+      >
+        Kami siap membantu menjawab pertanyaan dan kebutuhan kamu
+      </p>
     </section>
 
-    <!-- Konten utama: 2 kolom -->
-    <section class="contact-content">
-      <!-- Kolom Info Kontak -->
-      <div class="info-kontak">
-        <h2>Info Kontak</h2>
+    <!-- ========== KONTEN KONTAK ========== -->
+    <section class="py-16 px-6 bg-gray-50">
 
-        <ul>
-          <li>📍 Jl. Bandung Kota No. 62</li>
-          <li>📞 (813) 892184428</li>
-          <li>✉️ info@SalsabiyaDIOR.com</li>
-        </ul>
+      <div
+        class="max-w-6xl mx-auto
+               flex flex-col lg:flex-row
+               gap-8"
+      >
 
-        <p class="jam-operasional">
-          🕐 Senin – Jumat: 08.00 – 17.00
-        </p>
-      </div>
+        <!-- ========== INFO KONTAK ========== -->
+        <div
+          class="flex-1
+                 bg-purple-100
+                 border-l-4 border-purple-500
+                 rounded-xl
+                 p-8
+                 shadow-md
+                 transition duration-300
+                 hover:-translate-y-1 hover:shadow-xl"
+        >
+          <h2
+            class="text-2xl md:text-3xl
+                   font-bold text-gray-800 mb-6"
+          >
+            Info Kontak
+          </h2>
 
-      <!-- Kolom Formulir Kontak -->
-      <div class="form-card">
-        <h2>Kirim Pesan</h2>
+          <ul class="space-y-5">
 
-        <form @submit.prevent>
-          <div class="form-group">
-            <label for="nama">Nama</label>
-            <input
-              id="nama"
-              type="text"
-              placeholder="Masukkan nama kamu"
-            />
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">📍</span>
+
+              <div>
+                <p class="font-semibold text-gray-800">
+                  Alamat
+                </p>
+
+                <p class="text-gray-600">
+                  Jl. Bandung Kota No. 62
+                </p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">📞</span>
+
+              <div>
+                <p class="font-semibold text-gray-800">
+                  Telepon
+                </p>
+
+                <p class="text-gray-600">
+                  (813) 892184428
+                </p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">✉️</span>
+
+              <div>
+                <p class="font-semibold text-gray-800">
+                  Email
+                </p>
+
+                <p class="text-gray-600">
+                  info@SalsabiyaDIOR.com
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- Jam Operasional -->
+          <div
+            class="mt-8
+                   bg-white/70
+                   rounded-lg
+                   p-4"
+          >
+            <p class="font-semibold text-gray-800">
+              🕐 Jam Operasional
+            </p>
+
+            <p class="text-gray-600 mt-1">
+              Senin – Jumat: 08.00 – 17.00
+            </p>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="salsabiya@email.com"
-            />
-          </div>
 
-          <div class="form-group">
-            <label for="pesan">Pesan</label>
-            <textarea
-              id="pesan"
-              rows="5"
-              placeholder="Tulis pesan kamu di sini..."
-            ></textarea>
-          </div>
+        <!-- ========== FORM KONTAK ========== -->
+        <div
+          class="flex-1
+                 bg-white
+                 rounded-xl
+                 p-8
+                 shadow-md
+                 transition duration-300
+                 hover:shadow-xl"
+        >
+          <h2
+            class="text-2xl md:text-3xl
+                   font-bold text-gray-800 mb-6"
+          >
+            Kirim Pesan
+          </h2>
 
-          <button type="submit" class="btn-kirim">
-            Kirim 🚀
-          </button>
-        </form>
+          <form @submit.prevent>
+
+            <!-- Nama -->
+            <div class="mb-5">
+              <label
+                for="nama"
+                class="block mb-2
+                       font-semibold text-gray-700"
+              >
+                Nama
+              </label>
+
+              <input
+                id="nama"
+                type="text"
+                placeholder="Masukkan nama kamu"
+                class="w-full
+                       px-4 py-3
+                       rounded-lg
+                       border border-gray-300
+                       text-gray-800
+                       transition duration-300
+                       focus:outline-none
+                       focus:border-pink-400
+                       focus:ring-2
+                       focus:ring-pink-200"
+              />
+            </div>
+
+
+            <!-- Email -->
+            <div class="mb-5">
+              <label
+                for="email"
+                class="block mb-2
+                       font-semibold text-gray-700"
+              >
+                Email
+              </label>
+
+              <input
+                id="email"
+                type="email"
+                placeholder="salsabiya@email.com"
+                class="w-full
+                       px-4 py-3
+                       rounded-lg
+                       border border-gray-300
+                       text-gray-800
+                       transition duration-300
+                       focus:outline-none
+                       focus:border-pink-400
+                       focus:ring-2
+                       focus:ring-pink-200"
+              />
+            </div>
+
+
+            <!-- Pesan -->
+            <div class="mb-5">
+              <label
+                for="pesan"
+                class="block mb-2
+                       font-semibold text-gray-700"
+              >
+                Pesan
+              </label>
+
+              <textarea
+                id="pesan"
+                rows="5"
+                placeholder="Tulis pesan kamu di sini..."
+                class="w-full
+                       px-4 py-3
+                       rounded-lg
+                       border border-gray-300
+                       text-gray-800
+                       resize-none
+                       transition duration-300
+                       focus:outline-none
+                       focus:border-pink-400
+                       focus:ring-2
+                       focus:ring-pink-200"
+              ></textarea>
+            </div>
+
+
+            <!-- Tombol -->
+            <button
+              type="submit"
+              class="w-full
+                     bg-pink-500
+                     hover:bg-pink-600
+                     text-white
+                     px-8 py-3
+                     rounded-full
+                     font-bold
+                     text-base
+                     shadow-md
+                     transition duration-300
+                     hover:-translate-y-1
+                     hover:shadow-xl
+                     focus:outline-none
+                     focus:ring-4
+                     focus:ring-pink-200"
+            >
+              Kirim 🚀
+            </button>
+
+          </form>
+        </div>
+
       </div>
     </section>
+
   </div>
 </template>
 
 <script setup>
-// Belum membutuhkan logic.
-// Form hanya digunakan sebagai tampilan.
+// Tidak ada logic yang diperlukan.
+// Form masih hanya digunakan sebagai tampilan.
 </script>
-
-<style scoped>
-/* Banner */
-.banner {
-  background-color: bisque;
-  color: white;
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-.banner h1 {
-  margin: 0;
-}
-
-/* Layout 2 kolom */
-.contact-content {
-  display: flex;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  align-items: flex-start;
-}
-
-/* Kolom Info Kontak */
-.info-kontak {
-  flex: 1;
-}
-
-.info-kontak h2,
-.form-card h2 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-.info-kontak ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.info-kontak li {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.jam-operasional {
-  margin-top: 1.5rem;
-  color: #555;
-}
-
-/* Kolom Formulir */
-.form-card {
-  flex: 1;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-/* Styling field */
-.form-group {
-  margin-bottom: 1.2rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
-  color: #333;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  font-family: inherit;
-  box-sizing: border-box;
-  transition: border-color 0.3s;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: #4a90d9;
-}
-
-/* Tombol Kirim */
-.btn-kirim {
-  background: #4a90d9;
-  color: white;
-  border: none;
-  border-radius: 999px;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 0.5rem;
-  transition: background 0.3s;
-}
-
-.btn-kirim:hover {
-  background: #357abd;
-}
-
-/* Responsive untuk HP */
-@media (max-width: 768px) {
-  .contact-content {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
-  .info-kontak,
-  .form-card {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .form-card {
-    padding: 1.5rem;
-  }
-}
-</style>
