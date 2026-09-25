@@ -14,7 +14,11 @@ const daftarProduk = [
     { id:6, nama: 'eyeshadow Dior', harga : 700000, gambar:
         'https://i.pinimg.com/736x/a2/99/1e/a2991e045195b7ca458d478b11025269.jpg'
     },
-]
+    {id:7, nama: 'eyeliner', harga : 750000000, gambar: 
+    'https://i.pinimg.com/736x/be/16/53/be16539c68629eb749e45ed23a7c126c.jpg'},
+
+
+    ]
 </script>
 <template>
  <main>
