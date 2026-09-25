@@ -1,8 +1,8 @@
 <template>
-  <nav class="w-full shadow-md flex ">
+  <nav class="w-full shadow-md">
     <!-- <div class=""> -->
-      <p class="flex justify-start text-3xl ">Nabila-olshop</p>
       <!-- <div class="jus gap-10 py-4 justify-between">  -->
+        <p class="flex justify-start text-3xl">Nabila-olshop</p>
         <div class="flex justify-end items-center gap-10 py-4"> 
           
       <RouterLink
